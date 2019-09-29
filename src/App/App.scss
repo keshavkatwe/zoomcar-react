@@ -1,0 +1,30 @@
+@import "../scss/mixins";
+.app {
+  .header {
+    text-align: center;
+
+    h1 {
+      margin: 0;
+      padding: 10px 0;
+    }
+  }
+
+  .loading__cities {
+    padding: 0 8px;
+    text-align: center;
+  }
+  .no__cities
+  {
+    padding: 0 8px;
+  }
+}
+
+@include respond-to(xs) {
+  .app{
+    .header{
+      h1{
+        padding: 5px 0;
+      }
+    }
+  }
+}

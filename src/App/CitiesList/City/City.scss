@@ -1,0 +1,33 @@
+@import "../../../scss/mixins";
+.city-box {
+  padding: 8px;
+
+  width: 25%;
+
+  .content {
+    background-color: #dddddd;
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
+
+    .icon {
+      height: 60px;
+    }
+
+    .name {
+      margin: 10px 0 0;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .city-box {
+    width: 50%;
+  }
+}
+
+@include respond-to(sm) {
+  .city-box {
+    width: 33.33%;
+  }
+}

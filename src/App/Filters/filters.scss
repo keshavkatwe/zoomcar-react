@@ -1,0 +1,12 @@
+@import "../../scss/mixins";
+.filters {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+@include respond-to(xs) {
+  .filters {
+    flex-direction: column;
+  }
+}
